@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const BigButton = styled.button`
-  width: 120px;
-  height: 64px;
+  width: 100px;
+  height: 56px;
   border: none;
   border-radius: 10px;
   background: #92c2b1;
@@ -11,7 +11,7 @@ export const BigButton = styled.button`
   color: white;
   cursor: pointer;
   padding: 4px;
-  margin: 12px;
+  margin: 16px;
 `;
 
 export const SmallButton1 = styled.button`
