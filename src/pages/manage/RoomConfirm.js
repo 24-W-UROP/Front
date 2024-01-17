@@ -6,7 +6,6 @@ const RoomConfirmPage = () => {
   return (
     <Container>
       <Header />
-      <ContentsArea />
       <ButtonArea>
         <ConfirmButton text="승인" />
         <ConfirmButton text="승인거절" />
@@ -30,7 +29,7 @@ const ButtonArea = styled.div`
 `;
 
 const ContentsArea = styled.div`
-  padding: 46px 36px;
+  padding: 160px 24px;
   flex: 1;
 `;
 

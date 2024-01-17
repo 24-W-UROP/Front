@@ -1,37 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './common/HeaderWithArrow';
 
-const ConfirmButton = () => {
+const ConfirmButton = ({ text, onClick }) => {
   return (
-    <Container>
-      <Header />
-      <ContentsArea />
-      <ButtonArea>
-        <ConfirmButton text="승인" />
-        <ConfirmButton text="승인거절" />
-      </ButtonArea>
-    </Container>
+    <ButtonWrapper onClick={onClick}>
+      <Text>{text}</Text>
+    </ButtonWrapper>
   );
 };
 
-const Container = styled.div`
-  height: calc(100vh - 2px);
+const ButtonWrapper = styled.div`
+  width: 132px;
+  height: 42px;
+  background-color: #92c2b1;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 `;
 
-const ButtonArea = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin-right: 36px;
-  margin-bottom: 36px;
-`;
-
-const ContentsArea = styled.div`
-  padding: 160px 24px;
-  flex: 1;
+const Text = styled.div`
+  font-size: 20px;
+  color: #000000;
 `;
 
 export default ConfirmButton;

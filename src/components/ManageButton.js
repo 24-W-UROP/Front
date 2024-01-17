@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const ManageButton = ({ text, onClick, img }) => {
   return (
-    <ButtonWrapper>
-      <Text onClick={onClick}>{text}</Text>
+    <ButtonWrapper onClick={onClick}>
+      <Text>{text}</Text>
     </ButtonWrapper>
   );
 };
