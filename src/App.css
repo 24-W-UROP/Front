@@ -7,6 +7,13 @@
   --highlight-color: #55847A;
   --background-color: #FEFEFE;
   --main-font-opacity: 0.74;
+  --font-size-xl: 20px;
+  --font-size-ls: 18px;
+  --font-size-md: 28px;
+  --font-size-sm: 14px;
+  --font-size-xs: 12px;
+  --font-weight-bold: 600;
+  --font-weight-medium: 500;
 }
 
 #root {

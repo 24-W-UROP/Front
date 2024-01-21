@@ -5,21 +5,19 @@ module.exports = {
     node: true,
   },
   extends: [
-      'eslint:recommended',
-      'plugin:react/recommended',
-      'airbnb',
-      'plugin:prettier/recommended',
-      'react-app',
-      'prettier',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:prettier/recommended',
+    'react-app',
+    'prettier',
   ],
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script',
       },
@@ -29,8 +27,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  plugins: ['prettier'],
   rules: {
-    'prettier/prettier':[
+    'prettier/prettier': [
       'error',
       {
         endOfLine: 'auto',
