@@ -22,11 +22,27 @@ const TableContainer = styled.div`
 
 const TableTitle = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 32px;
   margin-bottom: 12px;
 `;
 
-export { ButtonContainer, TableContainer, TableTitle };
+const Table = styled.table`
+  width: 336px;
+  margin-left: 8px;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 2px solid #92c2b1;
+    font-size: 12px;
+    text-align: center;
+    padding: 4px;
+  }
+`;
+
+export { ButtonContainer, TableContainer, TableTitle, Table };

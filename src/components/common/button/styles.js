@@ -14,13 +14,26 @@ export const BigButton = styled.button`
   margin: 16px;
 `;
 
-export const SmallButton1 = styled.button`
+export const SmallButton = styled.button`
+  width: 44px;
+  height: 28px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background: #92c2b1;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+`;
+
+export const ModalButton1 = styled.button`
   width: 88px;
   height: 40px;
   border: 3px solid white;
   border-radius: 10px;
   background: #92c2b1;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: white;
   cursor: pointer;
@@ -28,7 +41,7 @@ export const SmallButton1 = styled.button`
   margin: 12px;
 `;
 
-export const SmallButton2 = styled.button`
+export const ModalButton2 = styled.button`
   width: 88px;
   height: 40px;
   border: 2px solid #92c2b1;

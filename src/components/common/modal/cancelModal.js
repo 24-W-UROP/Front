@@ -15,12 +15,19 @@ const CancelModal = ({ isOpen, handleConfirm, closeModal }) => {
           <style.ButtonContainer>
             <div>
               <Button
+                use="modal"
                 size="small"
                 num="one"
                 name="확인"
                 onClick={handleConfirm}
               />
-              <Button size="small" num="two" name="취소" onClick={closeModal} />
+              <Button
+                use="modal"
+                size="small"
+                num="two"
+                name="취소"
+                onClick={closeModal}
+              />
             </div>
           </style.ButtonContainer>
         </style.ModalContent>

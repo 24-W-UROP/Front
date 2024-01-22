@@ -15,6 +15,7 @@ const CompleteModal = ({ isOpen, handleConfirm, closeModal }) => {
           <style.ButtonContainer>
             <div>
               <Button
+                use="modal"
                 size="small"
                 num="one"
                 name="확인"
