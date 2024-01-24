@@ -5,8 +5,16 @@ import HeaderWithArrow from '../../components/common/HeaderWithArrow';
 const ReservationPage = () => {
   const [numberOfPeople, setNumberOfPeople] = useState('');
   const [reason, setReason] = useState('');
+  const isReservationEnabled = () => {
+    return numberOfPeople.trim() !== '' && reason.trim() !== '';
+  };
   const handleReservation = () => {
-    console.log('Reservation logic here');
+    console.log('Is reservation enabled:', isReservationEnabled());
+    if (isReservationEnabled()) {
+      console.log('Reservation logic here');
+    } else {
+      console.log('Please fill in the required information');
+    }
   };
 
   return (
@@ -17,7 +25,7 @@ const ReservationPage = () => {
         <Separator />
         <Input
           type="text"
-          palceholder="인원을 입력하세요"
+          placeholder="인원을 입력하세요"
           value={numberOfPeople}
           onChange={e => {
             setNumberOfPeople(e.target.value);
@@ -29,7 +37,7 @@ const ReservationPage = () => {
         <Separator />
         <Input
           type="text"
-          placeholer="이유를 입력하세요"
+          placeholder="이유를 입력하세요"
           value={reason}
           onChange={e => {
             setReason(e.target.value);
@@ -37,7 +45,10 @@ const ReservationPage = () => {
         />
       </Section>
       <ButtonContainer>
-        <ReservationButton onClick={handleReservation}>
+        <ReservationButton
+          onClick={handleReservation}
+          disabled={!isReservationEnabled()}
+        >
           예약하기
         </ReservationButton>
       </ButtonContainer>
